@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}  {% endblock %} | picket </title>
+</head>
+<body>
+    <nav>
+        <div class="">
+            <a href="/">
+                <h1>picket</h1>
+
+                <div class="">
+                    <img src="#" alt="logo">
+                </div>
+            </a>
+        </div>
+
+        <div class="">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="#" alt="profile photo">
+                    </a>
+                </li>
+
+                <li><a href="#"> dashboard </a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+    <hr>
+    <footer>
+        <h4>footer</h4>
+    </footer>
+</body>
+</html>

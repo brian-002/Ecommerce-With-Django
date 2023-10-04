@@ -1,0 +1,16 @@
+{% extends 'shop/base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+ <h1>homepage</h1>
+ <div class="">
+    <a href="#">
+        {% for product in products %}
+        <h3>{{product.name}}</h3>
+        <h6>{{product.date_created}}</h6>
+        <p>{{product.description}}</p>
+        {% endfor %}
+    </a>
+ </div>
+{% endblock %}
